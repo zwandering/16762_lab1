@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'stretch_demo = lab_1.ros2:main',
         ],
     },
 )
