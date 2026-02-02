@@ -24,19 +24,19 @@ def main():
 
     # Move wrist motors one at a time (angles in radians)
     # Wrist yaw
-    robot.end_of_arm.move_to('wrist_yaw', math.radians(30))
+    robot.end_of_arm.move_to('wrist_yaw', math.radians(8))
     robot.push_command()
     robot.wait_command()
     time.sleep(1)
 
     # Wrist pitch
-    robot.end_of_arm.move_to('wrist_pitch', math.radians(30))
+    robot.end_of_arm.move_to('wrist_pitch', math.radians(8))
     robot.push_command()
     robot.wait_command()
     time.sleep(1)
     
     # Wrist roll
-    robot.end_of_arm.move_to('wrist_roll', math.radians(30))
+    robot.end_of_arm.move_to('wrist_roll', math.radians(8))
     robot.push_command()
     robot.wait_command()
     time.sleep(2)
