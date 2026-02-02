@@ -36,7 +36,7 @@ def main():
     time.sleep(1)
     
     # Wrist roll
-    robot.end_of_arm.move_to('wrist_roll', math.radians(8))
+    robot.end_of_arm.move_to('wrist_roll', math.radians(30))
     robot.push_command()
     robot.wait_command()
     time.sleep(2)

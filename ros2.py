@@ -46,12 +46,12 @@ class StretchDemoNode:
         self.node.get_logger().info('Moving wrist joints...')
         
         # Wrist yaw
-        self.node.move_to_pose({'joint_wrist_yaw': np.radians(30)}, blocking=True)
+        self.node.move_to_pose({'joint_wrist_yaw': np.radians(8)}, blocking=True)
         self.node.get_logger().info('Wrist yaw moved')
         time.sleep(1)
         
         # Wrist pitch
-        self.node.move_to_pose({'joint_wrist_pitch': np.radians(30)}, blocking=True)
+        self.node.move_to_pose({'joint_wrist_pitch': np.radians(8)}, blocking=True)
         self.node.get_logger().info('Wrist pitch moved')
         time.sleep(1)
         
