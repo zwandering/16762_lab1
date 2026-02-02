@@ -24,7 +24,7 @@ def main():
 
     # Move wrist motors one at a time (angles in radians)
     # Wrist yaw
-    robot.end_of_arm.move_to('wrist_yaw', math.radians(45))
+    robot.end_of_arm.move_to('wrist_yaw', math.radians(30))
     robot.push_command()
     robot.wait_command()
     time.sleep(1)
@@ -52,12 +52,12 @@ def main():
     time.sleep(2)
 
     # Rotate both motors connected to the RealSense (head camera)
-    robot.head.move_to('head_pan', math.radians(45))
+    robot.head.move_to('head_pan', math.radians(30))
     robot.push_command()
     robot.wait_command()
     time.sleep(1)
     
-    robot.head.move_to('head_tilt', math.radians(45))
+    robot.head.move_to('head_tilt', math.radians(30))
     robot.push_command()
     robot.wait_command()
     time.sleep(1)

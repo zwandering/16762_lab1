@@ -46,7 +46,7 @@ class StretchDemoNode:
         self.node.get_logger().info('Moving wrist joints...')
         
         # Wrist yaw
-        self.node.move_to_pose({'joint_wrist_yaw': np.radians(45)}, blocking=True)
+        self.node.move_to_pose({'joint_wrist_yaw': np.radians(30)}, blocking=True)
         self.node.get_logger().info('Wrist yaw moved')
         time.sleep(1)
         
@@ -79,12 +79,12 @@ class StretchDemoNode:
         self.node.get_logger().info('Moving head camera...')
         
         # Move head pan
-        self.node.move_to_pose({'joint_head_pan': np.radians(45)}, blocking=True)
+        self.node.move_to_pose({'joint_head_pan': np.radians(30)}, blocking=True)
         self.node.get_logger().info('Head pan moved')
         time.sleep(1)
         
         # Move head tilt
-        self.node.move_to_pose({'joint_head_tilt': np.radians(45)}, blocking=True)
+        self.node.move_to_pose({'joint_head_tilt': np.radians(30)}, blocking=True)
         self.node.get_logger().info('Head tilt moved')
         time.sleep(1)
         
