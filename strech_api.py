@@ -84,7 +84,6 @@ def main():
     time.sleep(1)
 
     robot.stop()
-    robot.shutdown()
 
 if __name__ == "__main__":
     main()
