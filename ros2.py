@@ -39,7 +39,7 @@ class StretchDemoNode:
             'joint_lift': 1.10   # Near maximum height
         }, blocking=True)
         self.node.get_logger().info('Arm extended and lift raised')
-        time.sleep(1)
+        time.sleep(2)  # Increased delay to ensure arm/lift settle before wrist moves
         
     def move_wrist_joints(self):
         """Move all three wrist motors sequentially."""
@@ -115,7 +115,7 @@ class StretchDemoNode:
             # Stow the robot at start
             self.node.get_logger().info('Stowing robot...')
             self.node.stow_the_robot()
-            time.sleep(3)  # Wait for stow to complete
+            time.sleep(2)  # Wait for stow to complete
             
             # Execute demonstration sequence
             self.extend_arm_and_lift()
